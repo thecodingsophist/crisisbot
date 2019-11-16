@@ -1,5 +1,5 @@
 # Crisis Beacon
-<img src="assets/beacon.png"/>
+<img src="assets/beacon.png" style="width: 60px; height: 60px"/>
 
 ## Project Description
 FB Hackathon 2019: We wanted to respond to the problem that crisis responders don't know the location of where to find people during a public or private crisis. So this bot responds directly to a person in need of a crisis response by flagging a crisis responder on the map.
