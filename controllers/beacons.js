@@ -23,7 +23,12 @@ const addBeacon = async (req, res) => {
 };
 // Read
 const getBeacon = async (req, res) => {
-
+  try {
+    const beacon = await Beacon.findById(req.params.id);
+    res.status(200).json(beacon);
+  } catch (err) {
+    return res.status(500).send(err);
+  }
 };
 
 
