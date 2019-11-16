@@ -4,6 +4,8 @@
 opensource
 emergency response messengerbot
 
+## Live Server Link
+https://crisis-beacon-server.herokuapp.com/
 
 ## API Endpoints
 
