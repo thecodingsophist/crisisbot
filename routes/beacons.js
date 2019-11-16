@@ -1,4 +1,4 @@
-  const itemsRouter = require('express').Router();
+  const BeaconsRouter = require('express').Router();
   const {
     allBeacons,
     getBeacon,
@@ -6,11 +6,11 @@
   } = require('../controllers/beacons');
 
 
-  beaconsRouter.get('/items', allBeacons)
+  BeaconsRouter.get('/beacons', allBeacons)
 
-  beaconsRouter.post('/item', addBeacons);
+  BeaconsRouter.post('/beacon', addBeacons);
 
-  beaconsRouter.route('/item/:id')
+  beaconsRouter.route('/beacons/:id')
     // READ
     .get(getBeacon)
   // Update
