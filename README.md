@@ -10,17 +10,17 @@ https://crisis-beacon-server.herokuapp.com/
 
 ### User Beacons
 **`CREATE POST /beacon`** <br>
-    - **Arguments:**   <br>
-    - **Returns:**   
+    - **Arguments:**  Beacon Model <br>
+    - **Returns:**   status of 200 or error status 500
  <br>
 
 **`INDEX GET /beacons`**  <br>
     - **Arguments:** <br>
-    - **Returns:**   
+    - **Returns:**   An array of objects with beacons, and status of 200 or error status 500
 
 **`READ GET /beacon/:id`**  <br>
     - **Arguments:** <br>
-    - **Returns:**   
+    - **Returns:**  An object of a beacon, and status of 200 or error status 500
  <br>
 
 ## Presentations
