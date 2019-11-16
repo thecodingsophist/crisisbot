@@ -10,10 +10,10 @@
 
   BeaconsRouter.post('/beacon', addBeacon);
 
-  beaconsRouter.route('/beacons/:id')
+  BeaconsRouter.route('/beacons/:id')
     // READ
     .get(getBeacon)
   // Update
   // Delete
 
-  module.exports = beaconsRouter
+  module.exports = BeaconsRouter
