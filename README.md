@@ -24,7 +24,7 @@ https://crisis-beacon-server.herokuapp.com/
     - **Returns:**  An object of a beacon, and status of 200 or error status 500
  <br>
 
-## Presentations
+## Presentation
 [Crisis Beacon Deck](https://docs.google.com/presentation/d/1Ep9Jvll6JiroeZ6YXOi2AEokbLixljNxYOLQyRTfaZI/edit?usp=sharing)
 
 
