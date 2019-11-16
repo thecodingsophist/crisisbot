@@ -29,6 +29,7 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
   res.send('Waiting for you Jaeson!')
 })
+
 const beacons = require('./routes/beacons');
 
 
