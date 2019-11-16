@@ -23,9 +23,12 @@ https://crisis-beacon-server.herokuapp.com/
     - **Returns:**   
  <br>
 
+## Presentations
+[Crisis Beacon Deck](https://docs.google.com/presentation/d/1Ep9Jvll6JiroeZ6YXOi2AEokbLixljNxYOLQyRTfaZI/edit?usp=sharing)
 
- ## Tech Stack
 
- ## Contributors
+## Tech Stack
+
+## Contributors
 
  
