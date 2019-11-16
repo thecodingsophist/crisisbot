@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 const dbURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/crisis';
 mongoose.connect(dbURI, {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 mongoose.connection.once('open', () => {
   console.log('Mongo Connected.')

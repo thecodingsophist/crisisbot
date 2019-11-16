@@ -2,13 +2,13 @@
   const {
     allBeacons,
     getBeacon,
-    addBeacons
+    addBeacon
   } = require('../controllers/beacons');
 
 
   BeaconsRouter.get('/beacons', allBeacons)
 
-  BeaconsRouter.post('/beacon', addBeacons);
+  BeaconsRouter.post('/beacon', addBeacon);
 
   beaconsRouter.route('/beacons/:id')
     // READ

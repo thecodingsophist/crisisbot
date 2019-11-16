@@ -2,17 +2,19 @@ require('dotenv').config();
 const express = require('express');
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 // dbConnection
 require('./dbConnection/mongo');
 
 // Body Parser
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({
+  extended: false
+}));
 
 // Cookie Parser
-app.use(cookieParser());
+
 
 // Disables CORS
 app.use((req, res, next) => {
@@ -24,8 +26,14 @@ app.use((req, res, next) => {
 
 // Import the routes
 
+app.get('/', (req, res) => {
+  res.send('Waiting for you Jaeson!')
+})
+const beacons = require('./routes/beacons');
+
 
 // Tell app to use the routes
+app.use(beacons);
 
 
 // Run cron jobs
