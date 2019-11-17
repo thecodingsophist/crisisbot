@@ -3,9 +3,12 @@
 
 ## Project Description
 FB Hackathon 2019: We wanted to respond to the problem that crisis responders don't know the location of where to find people during a public or private crisis. So this bot responds directly to a person in need of a crisis response by flagging a crisis responder on the map.
-
+## Frontend Repo
+https://github.com/thecodingsophist/crisisbot_frontend
 ## Live Server Link
 https://crisis-beacon-server.herokuapp.com/
+## Messenger Repo
+https://github.com/jaebooker/crisis-messenger
 
 ## API Endpoints
 
