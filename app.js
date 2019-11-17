@@ -8,8 +8,10 @@ const port = process.env.PORT || 5000;
 require('./dbConnection/mongo');
 
 // Body Parser
-app.use(express.json());
-app.use(express.urlencoded({
+const bodyPaser = require('body-parser')
+
+app.use(bodyPaser.json());
+app.use(bodyPaser.urlencoded({
   extended: false
 }));
 
