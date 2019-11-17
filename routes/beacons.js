@@ -8,7 +8,7 @@
 
   BeaconsRouter.get('/beacons', allBeacons)
 
-  BeaconsRouter.post('/beacon', addBeacon);
+  BeaconsRouter.post('/beacons', addBeacon);
 
   BeaconsRouter.route('/beacons/:id')
     // READ

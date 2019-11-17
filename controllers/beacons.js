@@ -12,6 +12,7 @@ const allBeacons = async (req, res) => {
 // Create
 const addBeacon = async (req, res) => {
   try {
+    print("This is the body...", req.body)
     const beacon = await new Beacon(req.body);
     await beacon.save();
 
