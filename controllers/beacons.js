@@ -22,8 +22,8 @@ const allBeacons = async (req, res) => {
   }, function (err, response) {
     if (!err) {
 
-      return res.status(200).json(response.json.results[0].geometry.viewport.northeast)
-      // beacons ? res.status(200).json(response.json.results) : res.status(500).json('Something went wrong.');
+      
+      beacons ? res.status(200).json(response.json.results[0].geometry.viewport.northeast) : res.status(500).json('Something went wrong.');
 
     }
   });
