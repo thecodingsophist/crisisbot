@@ -13,15 +13,14 @@ const BeaconSchema = new Schema({
     type: String,
     required: true
   },
-  location: {
-    city: String,
-    country: String,
-    latitude: Number,
-    longitude: Number,
-    state: String,
-    street: String,
-    zip: String
-  }
+  city: {type: String, required: true},
+  country: {type: String, required: true}, 
+  latitude: {type: Number, required: true},
+  longitude: {type: Number, required: true},
+  state: {type: String, required: true},
+  street: {type: String, required: true},
+  zip: {type: String, required: true}
+  
 }, {
   timestamps: true
 });
