@@ -10,18 +10,24 @@ const allBeacons = async (req, res) => {
 };
 
 // Create
-const addBeacon = async (req, res) => {
-  try {
-    print("This is the body...", req.body)
-    const beacon = await new Beacon(req.body);
-    await beacon.save();
+const addBeacon =  (req, res) => {
+  // try {
+    
+  //   const beacon = await new Beacon(req.body);
+  //   await beacon.save();
 
-    return res.status(200).send(beacon);
+  //   return res.status(200).send(beacon);
 
-  } catch (err) {
+  // } catch (err) {
 
-    return res.status(500).send(err);
-  }
+  //   return res.status(500).send(err);
+  // }
+
+  console.log("wtf is up", req.body)
+  const beacon = new Beacon(req.body);
+  beacon.save()
+  return res.status(200).json(beacon)
+
 };
 // Read
 const getBeacon = async (req, res) => {
