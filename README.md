@@ -7,8 +7,10 @@ FB Hackathon 2019: We wanted to respond to the problem that crisis responders do
 https://github.com/thecodingsophist/crisisbot_frontend
 ## Live Server Link
 https://crisis-beacon-server.herokuapp.com/
-## Messenger Repo
+## Messenger On-line Repo
 https://github.com/jaebooker/crisis-messenger
+## Messenger Off-line Repo
+https://github.com/theriley106/Facebook-Hackathon
 
 ## API Endpoints
 
