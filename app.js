@@ -11,6 +11,7 @@ require('./dbConnection/mongo');
 const bodyPaser = require('body-parser')
 
 app.use(bodyPaser.json());
+app.use(bodyPaser.raw())
 app.use(bodyPaser.urlencoded({
   extended: false
 }));
