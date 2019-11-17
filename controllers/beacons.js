@@ -2,11 +2,41 @@ const {
   Beacon
 } = require('../models/beacon');
 
+
+// Google Maps
+const googleMapsClient = require('@google/maps').createClient({
+  key: process.env.GOOGLE_MAP_API_KEY
+});
+
+
 // Index
 const allBeacons = async (req, res) => {
   const beacons = await Beacon.find()
 
-  beacons ? res.status(200).json(beacons) : res.status(500).json('Something went wrong.');
+
+
+
+
+  let city = beacons[0].city
+  let state = beacons[0].state
+  let address = beacons[0].street
+
+  googleMapsClient.geocode({
+    address: `${address}, ${city}, ${state}`
+  }, function (err, response) {
+    if (!err) {
+      // console.log("Help:", response.json.results)
+      return res.status(200).json(response.json.results[0].geometry.viewport.northeast)
+      // beacons ? res.status(200).json(response.json.results) : res.status(500).json('Something went wrong.');
+
+    }
+  });
+
+
+
+
+
+
 };
 
 // Create
